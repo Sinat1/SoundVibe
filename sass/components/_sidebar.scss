@@ -1,0 +1,14 @@
+.sidebar {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 0;
+    z-index: 50;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+  }
+}

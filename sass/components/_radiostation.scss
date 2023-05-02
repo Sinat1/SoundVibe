@@ -1,0 +1,158 @@
+.radiostation__section {
+  background-size: cover;
+  background-position: center;
+  //   min-height: 90vh;
+  //   max-height: 100vh;
+
+  @media screen and (max-width: 1199px) {
+    background-image: url("../../images/mobile-radiostation-background.jpg");
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url("../../images/desktop-background.jpg");
+    padding-bottom: 190px;
+    padding-top: 33px;
+  }
+
+  @media screen and (min-width: 1700px) {
+    background-image: url("../../images/blaz-photo-cZWZjymwI9o-unsplash\ 1.jpg");
+    padding-bottom: 38.5px;
+    min-height: 90vh;
+    max-height: 100vh;
+  }
+}
+
+.radiostation__wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding-left: 250px;
+  }
+}
+
+.radiostation__content-block {
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 50px;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    //   width: 310px;
+    min-width: 300px;
+    max-width: 350px;
+    height: 515px;
+    padding: 21px 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 800px;
+    height: 720px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: 1000px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1300px;
+  }
+}
+
+.radiostation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radiostation__item {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.radiostation__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 91px;
+  height: 53px;
+}
+
+.radiostation__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 258px;
+  height: 32px;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+
+.radiostation__description-wrapper--first {
+  background-color: rgba(237, 154, 135, 0.65);
+}
+
+.radiostation__description-wrapper--second {
+  background-color: rgba(53, 44, 112, 0.65);
+}
+
+.radiostation__description-wrapper--third {
+  background-color: rgba(110, 110, 110, 0.65);
+}
+
+.radiostation__description-wrapper--fourth {
+  background-color: rgba(43, 43, 45, 0.65);
+}
+
+.radiostation__description {
+  width: 200px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 8px;
+
+  color: #ffffff;
+}
+
+.radiostation__play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+
+.radiostation__play-btn--first {
+  background-color: #ed9a87;
+}
+
+.radiostation__play-btn--second {
+  background-color: #303778;
+}
+
+.radiostation__play-btn--third {
+  background-color: #2d2d2d;
+}
+
+.radiostation__play-btn--fourth {
+  background-color: #000000;
+}
+
+.radiostation__play-icon {
+  width: 12px;
+  height: 14px;
+}
