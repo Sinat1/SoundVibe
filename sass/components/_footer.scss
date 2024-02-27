@@ -1,0 +1,46 @@
+footer {
+  z-index: 6;
+  position: relative;
+  height: 70px;
+  background: linear-gradient(
+      181.19deg,
+      rgba(253, 121, 62, 0.2) 11.48%,
+      rgba(0, 0, 0, 0) 77.56%
+    ),
+    #000000;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer__song-img {
+  margin-left: 12px;
+}
+
+.footer__song-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer__song-audio {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  margin-left: 12px;
+
+  width: 250px;
+  height: 20px;
+}

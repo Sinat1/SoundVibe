@@ -1,0 +1,220 @@
+.contacts__section {
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 1199px) {
+    background-image: url("../../images/mobile-background.png");
+    padding-top: 35px;
+    padding-bottom: 85px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url("../../images/desktop-background.jpg");
+    padding-top: 105px;
+    padding-bottom: 250px;
+    // padding-bottom: 38.5px;
+  }
+
+  @media screen and (min-width: 1700px) {
+    padding-bottom: 200px;
+  }
+}
+
+.contacts__section-wrapper {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    padding-left: 300px;
+  }
+}
+.contacts__title-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    padding-bottom: 35px;
+  }
+}
+
+.contacts__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 470px;
+    font-size: 96px;
+    line-height: 116px;
+    margin-bottom: 52px;
+  }
+}
+
+.contacts__link {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.contacts__form-wrapper {
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    padding-top: 68px;
+    padding-right: 50px;
+    padding-left: 100px;
+  }
+}
+
+.contacts__form-title {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 22px;
+  }
+}
+
+.contacts__form {
+  display: block;
+  position: relative;
+
+  @media screen and (max-width: 1199px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.contacts__form-field {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 15px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 22px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts__form-input {
+  padding-left: 11px;
+  width: 100%;
+  height: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #000;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.contacts__form-textarea {
+  padding-top: 14px;
+  padding-left: 11px;
+  width: 100%;
+  height: 116px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #000;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.contacts__form-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+
+  color: #bababa;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    top: 93%;
+    width: 117px;
+    height: 31px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 92%;
+    width: 166px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

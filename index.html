@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="SoundVibe">
+        <svg class="logo__icon">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <label class="search-label">
+        <input class="search-input" type="text" placeholder="Search music..." />
+      </label>
+      <nav class="site-nav">
+        <button
+          class="menu__btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu__icon">
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-moblie-menu-close"
+            ></use>
+            <use
+              class="icon-burger"
+              href="./images/sprite.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="main-site-nav__list">
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./radiostation.html"
+                >Радіостанція</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./concerts.html"
+                >Концерти та заходи</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <div class="sidebar-wrapper">
+            <ul class="sidebar-site-nav__list">
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Альбоми</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Виконавці</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Жанри</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Фото та відео</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Комунікація</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Новини</a>
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="sidebar"></aside>
+      <section class="hero">
+        <div class="hero__content-wrapper">
+          <div class="hero__main-block-wrapper">
+            <h1 class="hero__title">SoundVibe</h1>
+            <p class="hero__text">Добірки для вас</p>
+            <div class="hero__content-block">
+              <ul class="hero__content-list">
+                <li class="hero__content-item hero__content-item--first">
+                  <img
+                    srcset="
+                      ./images/hero-image1-mobile.png   93w,
+                      ./images/hero-image1-desktop.png 171w
+                    "
+                    class="hero__content-img"
+                    src="./images/hero-image1-mobile.png"
+                    alt="image1"
+                  />
+                </li>
+                <li class="hero__content-item hero__content-item--second">
+                  <img
+                    srcset="
+                      ./images/hero-image2-mobile.png   97w,
+                      ./images/hero-image2-desktop.png 178w
+                    "
+                    class="hero__content-img"
+                    src="./images/hero-image2-mobile.png"
+                    alt="image2"
+                  />
+                </li>
+                <li class="hero__content-item hero__content-item--third">
+                  <img
+                    srcset="
+                      ./images/hero-image3-mobile.png   96w,
+                      ./images/hero-image3-desktop.png 176w
+                    "
+                    class="hero__content-img"
+                    src="./images/hero-image3-mobile.png"
+                    alt="image3"
+                  />
+                </li>
+                <li class="hero__content-item hero__content-item--fourth">
+                  <img
+                    srcset="
+                      ./images/hero-image4-mobile.png   95w,
+                      ./images/hero-image4-desktop.png 173w
+                    "
+                    class="hero__content-img"
+                    src="./images/hero-image4-mobile.png"
+                    alt="image4"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="player__wrapper">
+            <div class="player">
+              <p class="player__title">SOUNDVIBE</p>
+              <img
+                class="player__song-img"
+                src="./images/player-song-img.png"
+                alt="Song label"
+              />
+              <p class="player__song-artist">MUSIC</p>
+              <p class="player__song-title">Ukraine</p>
+              <audio class="" src="./гімнукраїни.mp3" controls></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__wrapper">
+        <img
+          class="footer__song-img"
+          src="./images/footer-mobile-song-img.png"
+          alt="Song Image"
+        />
+        <p class="footer__song-title">Слава Україні!</p>
+        <audio
+          class="footer__song-audio"
+          src="./гімнукраїни.mp3"
+          controls
+        ></audio>
+      </div>
+    </footer>
+    <script src="./js/burger-menu.js"></script>
+  </body>
+</html>

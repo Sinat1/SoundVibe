@@ -1,0 +1,269 @@
+.hero {
+  background-size: cover;
+  background-position: center;
+  // min-height: 90vh;
+  // max-height: 100vh;
+
+  @media screen and (max-width: 1199px) {
+    background-image: url("../../images/mobile-background.png");
+    padding-bottom: 125px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url("../../images/desktop-background.jpg");
+    padding-bottom: 38.5px;
+  }
+
+  @media screen and (min-width: 1700px) {
+    padding-bottom: 200px;
+  }
+}
+
+.hero__content-wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero__main-block-wrapper {
+  @media screen and (min-width: 1200px) {
+    padding-left: 245px;
+  }
+}
+
+.hero__title {
+  margin: 0;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 42px;
+    padding-bottom: 62px;
+    text-align: center;
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // font-size: 128px;
+    font-size: 100px;
+    line-height: 155px;
+    padding: 50px 0 50px 66px;
+    // margin-left: 250px;
+  }
+}
+
+.hero__text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+
+  color: rgba(255, 255, 255, 0.79);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    padding-bottom: 110px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // font-size: 40px;
+    font-size: 35px;
+    line-height: 48px;
+    // margin-left: 300px;
+    padding-left: 66px;
+    padding-bottom: 30px;
+  }
+}
+
+.hero__content-block {
+  display: block;
+
+  //   background-color: #060606;
+  background-color: rgba($color: #060606, $alpha: 0.5);
+
+  border-radius: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 298px;
+    height: 293px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // width: 525px;
+    // height: 468px;
+    width: 450px;
+    height: 468px;
+    margin-left: 66px;
+    // margin-left: 310px;
+  }
+}
+
+.hero__content-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 12px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 30px;
+    // padding-right: 20px;
+    padding-top: 45px;
+  }
+}
+
+.hero__content-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+
+  @media screen and (max-width: 1199px) {
+    width: 110px;
+    height: 110px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 48px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    // width: 195px;
+    // height: 195px;
+    width: 170px;
+    height: 170px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 48px;
+    }
+  }
+}
+
+.hero__content-item--first {
+  background: linear-gradient(
+    138.93deg,
+    #5ef44f 9.42%,
+    #010101 92.72%,
+    #fc9d59 92.73%
+  );
+  margin-bottom: 35px;
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+.hero__content-item--second {
+  background: linear-gradient(139.03deg, #fd382f 9.41%, #fc9d59 92.37%);
+  margin-bottom: 35px;
+  padding-top: 15px;
+  padding-left: 8px;
+}
+
+.hero__content-item--third {
+  background: linear-gradient(
+    135.42deg,
+    #ec1e32 7.91%,
+    #1a1414 62.97%,
+    #000000 92.94%
+  );
+  padding-right: 5px;
+}
+
+.hero__content-item--fourth {
+  background: linear-gradient(135.17deg, #ff6e36 7.67%, #fae12d 93.57%);
+}
+
+.player__wrapper {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 110px;
+    margin-right: 162px;
+    margin-left: 35px;
+  }
+}
+
+.player {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../images/player-background.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+
+    // position: absolute;
+    // top: 230px;
+    // top: 25%;
+    // left: 1100px;
+    // left: 65%;
+    // right: 10%;
+    width: 380px;
+    height: 700px;
+    padding-top: 40px;
+  }
+}
+
+.player__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #b8b8b8;
+
+  margin-bottom: 40px;
+}
+
+.player__song-img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.player__song-artist {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.player__song-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #999999;
+  margin-bottom: 35px;
+}

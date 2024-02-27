@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="SoundVibe">
+        <svg class="logo__icon">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <label class="search-label">
+        <input class="search-input" type="text" placeholder="Search music..." />
+      </label>
+      <nav class="site-nav">
+        <button
+          class="menu__btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu__icon">
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-moblie-menu-close"
+            ></use>
+            <use
+              class="icon-burger"
+              href="./images/sprite.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="main-site-nav__list">
+            <li class="main-site-nav__item">
+              <a
+                class="main-site-nav__link main-site-nav__link--current"
+                href="./radiostation.html"
+                >Радіостанція</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./concerts.html"
+                >Концерти та заходи</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <div class="sidebar-wrapper">
+            <ul class="sidebar-site-nav__list">
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Альбоми</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Виконавці</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Жанри</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Фото та відео</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Комунікація</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Новини</a>
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="sidebar"></aside>
+      <section class="radiostation__section">
+        <div class="radiostation__wrapper">
+          <div class="radiostation__content-block">
+            <ul class="radiostation__list">
+              <li class="radiostation__item">
+                <img
+                  class="radiostation__img"
+                  srcset="
+                    ./images/hitFM-mobile.jpg  182w,
+                    ./images/hitFM-desktop.jpg 412w
+                  "
+                  src="./images/hitFM-mobile.jpg"
+                  alt="ХІТFM"
+                />
+                <div
+                  class="radiostation__description-wrapper radiostation__description-wrapper--first"
+                >
+                  <p class="radiostation__description">
+                    Тільки хіти!<br />
+                    Стилі: dance, pop, disco, pop-rock, rock, r'n'b
+                  </p>
+                  <button
+                    type="button"
+                    class="radiostation__play-btn radiostation__play-btn--first"
+                  >
+                    <svg class="radiostation__play-icon">
+                      <use href="./images/sprite.svg#icon-play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="radiostation__item">
+                <img
+                  class="radiostation__img"
+                  srcset="
+                    ./images/NRJ-mobile.jpg  182w,
+                    ./images/NRJ-desktop.jpg 414w
+                  "
+                  src="./images/NRJ-mobile.jpg"
+                  alt="NRJ"
+                />
+                <div
+                  class="radiostation__description-wrapper radiostation__description-wrapper--second"
+                >
+                  <p class="radiostation__description">
+                    Стилі: dance, pop, disco
+                  </p>
+                  <button
+                    class="radiostation__play-btn radiostation__play-btn--second"
+                  >
+                    <svg class="radiostation__play-icon">
+                      <use href="./images/sprite.svg#icon-play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="radiostation__item">
+                <img
+                  class="radiostation__img"
+                  srcset="
+                    ./images/kissFM-mobile.jpg  186w,
+                    ./images/kissFM-desktop.jpg 412w
+                  "
+                  src="./images/kissFM-mobile.jpg"
+                  alt="KISSFM"
+                />
+                <div
+                  class="radiostation__description-wrapper radiostation__description-wrapper--third"
+                >
+                  <p class="radiostation__description">
+                    The Best Dance Radio <br />
+                    Стилі: house, club/dance, dance, electro, electronic,
+                    progressive, trance, dnb
+                  </p>
+                  <button
+                    class="radiostation__play-btn radiostation__play-btn--third"
+                  >
+                    <svg class="radiostation__play-icon">
+                      <use href="./images/sprite.svg#icon-play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="radiostation__item">
+                <img
+                  class="radiostation__img"
+                  srcset="
+                    ./images/radioROCKS-mobile.jpg  186w,
+                    ./images/radioROCKS-desktop.jpg 412w
+                  "
+                  src="./images/radioROCKS-mobile.jpg"
+                  alt="RADIO ROCKS"
+                />
+                <div
+                  class="radiostation__description-wrapper radiostation__description-wrapper--fourth"
+                >
+                  <p class="radiostation__description">
+                    Рок. Тільки рок! <br />
+                    Стилі: rock, classic rock, hard rock, metal, heavy metal,
+                    blues, rock'n'roll
+                  </p>
+                  <button
+                    class="radiostation__play-btn radiostation__play-btn--fourth"
+                  >
+                    <svg class="radiostation__play-icon">
+                      <use href="./images/sprite.svg#icon-play-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/radio.js"></script>
+  </body>
+</html>

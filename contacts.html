@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="SoundVibe">
+        <svg class="logo__icon">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <label class="search-label">
+        <input class="search-input" type="text" placeholder="Search music..." />
+      </label>
+      <nav class="site-nav">
+        <button
+          class="menu__btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu__icon">
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-moblie-menu-close"
+            ></use>
+            <use
+              class="icon-burger"
+              href="./images/sprite.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="main-site-nav__list">
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./radiostation.html"
+                >Радіостанція</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./concerts.html"
+                >Концерти та заходи</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a
+                class="main-site-nav__link main-site-nav__link--current"
+                href="./contacts.html"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+          <div class="sidebar-wrapper">
+            <ul class="sidebar-site-nav__list">
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Альбоми</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Виконавці</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Жанри</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Фото та відео</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Комунікація</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Новини</a>
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="sidebar"></aside>
+      <section class="contacts__section">
+        <div class="contacts__section-wrapper">
+          <div class="contacts__title-wrapper">
+            <h1 class="contacts__title">
+              Є щось сказати? <br />
+              Зв'яжіться з нами!
+            </h1>
+            <ul>
+              <li>
+                <a class="contacts__link" href="tel:+38(067) 210-15-12"
+                  >+38(067) 210-15-12</a
+                >
+              </li>
+              <li>
+                <a class="contacts__link" href="mailto:soundvibe@gmail.com"
+                  >soundvibe@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__form-wrapper">
+            <p class="contacts__form-title">Надішліть нам повідомлення</p>
+            <form class="contacts__form">
+              <div class="contacts__form-field">
+                <label class="contacts__form-label" for="username">
+                  <input
+                    class="contacts__form-input"
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Name"
+                  />
+                </label>
+              </div>
+              <div class="contacts__form-field">
+                <label class="contacts__form-label" for="email">
+                  <input
+                    class="contacts__form-input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </label>
+              </div>
+              <div class="contacts__form-field">
+                <label class="contacts__form-label" for="number">
+                  <input
+                    class="contacts__form-input"
+                    type="tel"
+                    name="number"
+                    id="number"
+                    placeholder="Phone"
+                  />
+                </label>
+              </div>
+              <div class="contacts__form-field">
+                <label class="contacts__form-label" for="comment">
+                  <textarea
+                    class="contacts__form-textarea"
+                    name="comment"
+                    id="comment"
+                    placeholder="Type your message here..."
+                  ></textarea>
+                </label>
+              </div>
+              <button class="contacts__form-btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/burger-menu.js"></script>
+  </body>
+</html>

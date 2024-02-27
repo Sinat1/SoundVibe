@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundVibe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="SoundVibe">
+        <svg class="logo__icon">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <label class="search-label">
+        <input class="search-input" type="text" placeholder="Search music..." />
+      </label>
+      <nav class="site-nav">
+        <button
+          class="menu__btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu__icon">
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-moblie-menu-close"
+            ></use>
+            <use
+              class="icon-burger"
+              href="./images/sprite.svg#icon-burger-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="main-site-nav__list">
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./radiostation.html"
+                >Радіостанція</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a
+                class="main-site-nav__link main-site-nav__link--current"
+                href="./concerts.html"
+                >Концерти та заходи</a
+              >
+            </li>
+            <li class="main-site-nav__item">
+              <a class="main-site-nav__link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <div class="sidebar-wrapper">
+            <ul class="sidebar-site-nav__list">
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Альбоми</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Виконавці</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Жанри</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Фото та відео</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Комунікація</a>
+              </li>
+              <li class="sidebar-site-nav__item">
+                <a class="sidebar-site-nav__link" href="">Новини</a>
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="">
+                  <svg class="social__icon" width="27" height="27">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="sidebar"></aside>
+      <section class="concerts__section">
+        <h1 class="concerts__title">Майбутні концерти та заходи</h1>
+        <div class="concerts__wrapper">
+          <div class="concerts__block">
+            <ul class="concerts__list">
+              <li class="concerts__item">
+                <img
+                  class="concerts__img"
+                  srcset="
+                    ./images/mobile-concert1.jpg  111w,
+                    ./images/desktop-concert1.jpg 454w
+                  "
+                  src="./images/mobile-concert1.jpg"
+                  alt="Concert №1"
+                />
+              </li>
+              <li class="concerts__item">
+                <img
+                  class="concerts__img"
+                  srcset="
+                    ./images/mobile-concert2.jpg  109w,
+                    ./images/desktop-concert2.jpg 450w
+                  "
+                  src="./images/mobile-concert2.jpg"
+                  alt="Concert №2"
+                />
+              </li>
+              <li class="concerts__item">
+                <img
+                  class="concerts__img"
+                  srcset="
+                    ./images/mobile-concert3.jpg  109w,
+                    ./images/desktop-concert3.jpg 394w
+                  "
+                  src="./images/mobile-concert3.jpg"
+                  alt="Concert №3"
+                />
+              </li>
+              <li class="concerts__item">
+                <img
+                  class="concerts__img"
+                  srcset="
+                    ./images/mobile-concert4.jpg  109w,
+                    ./images/desktop-concert4.jpg 448w
+                  "
+                  src="./images/mobile-concert4.jpg"
+                  alt="Concert №4"
+                />
+              </li>
+            </ul>
+            <button data-modal-open class="concerts__btn" type="button">
+              Load more
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert1.jpg  111w,
+                ./images/desktop-concert1.jpg 454w
+              "
+              src="./images/mobile-concert1.jpg"
+              alt="Concert №1"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert2.jpg  109w,
+                ./images/desktop-concert2.jpg 450w
+              "
+              src="./images/mobile-concert2.jpg"
+              alt="Concert №2"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert3.jpg  109w,
+                ./images/desktop-concert3.jpg 394w
+              "
+              src="./images/mobile-concert3.jpg"
+              alt="Concert №3"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert4.jpg  109w,
+                ./images/desktop-concert4.jpg 448w
+              "
+              src="./images/mobile-concert4.jpg"
+              alt="Concert №4"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert1.jpg  111w,
+                ./images/desktop-concert1.jpg 454w
+              "
+              src="./images/mobile-concert1.jpg"
+              alt="Concert №5"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert2.jpg  109w,
+                ./images/desktop-concert2.jpg 450w
+              "
+              src="./images/mobile-concert2.jpg"
+              alt="Concert №6"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert3.jpg  109w,
+                ./images/desktop-concert3.jpg 394w
+              "
+              src="./images/mobile-concert3.jpg"
+              alt="Concert №7"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert4.jpg  109w,
+                ./images/desktop-concert4.jpg 448w
+              "
+              src="./images/mobile-concert4.jpg"
+              alt="Concert №8"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert1.jpg  111w,
+                ./images/desktop-concert1.jpg 454w
+              "
+              src="./images/mobile-concert1.jpg"
+              alt="Concert №9"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert2.jpg  109w,
+                ./images/desktop-concert2.jpg 450w
+              "
+              src="./images/mobile-concert2.jpg"
+              alt="Concert №10"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert3.jpg  109w,
+                ./images/desktop-concert3.jpg 394w
+              "
+              src="./images/mobile-concert3.jpg"
+              alt="Concert №11"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert4.jpg  109w,
+                ./images/desktop-concert4.jpg 448w
+              "
+              src="./images/mobile-concert4.jpg"
+              alt="Concert №12"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert1.jpg  111w,
+                ./images/desktop-concert1.jpg 454w
+              "
+              src="./images/mobile-concert1.jpg"
+              alt="Concert №13"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert2.jpg  109w,
+                ./images/desktop-concert2.jpg 450w
+              "
+              src="./images/mobile-concert2.jpg"
+              alt="Concert №14"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert3.jpg  109w,
+                ./images/desktop-concert3.jpg 394w
+              "
+              src="./images/mobile-concert3.jpg"
+              alt="Concert №15"
+            />
+          </li>
+          <li class="modal__item">
+            <img
+              class="modal__img"
+              srcset="
+                ./images/mobile-concert4.jpg  109w,
+                ./images/desktop-concert4.jpg 448w
+              "
+              src="./images/mobile-concert4.jpg"
+              alt="Concert №16"
+            />
+          </li>
+        </ul>
+        <button data-modal-close class="concerts__btn" type="button">
+          Close
+        </button>
+      </div>
+    </div>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/concerts-modal.js"></script>
+  </body>
+</html>
