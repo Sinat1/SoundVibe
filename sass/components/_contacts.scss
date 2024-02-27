@@ -3,13 +3,13 @@
   background-position: center;
 
   @media screen and (max-width: 1199px) {
-    background-image: url("../../images/mobile-background.png");
+    background-image: url("../images/mobile-background.png");
     padding-top: 35px;
     padding-bottom: 85px;
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url("../../images/desktop-background.jpg");
+    background-image: url("../images/desktop-background.jpg");
     padding-top: 105px;
     padding-bottom: 250px;
     // padding-bottom: 38.5px;

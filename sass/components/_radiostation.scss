@@ -5,13 +5,13 @@
   //   max-height: 100vh;
 
   @media screen and (max-width: 1199px) {
-    background-image: url("../../images/mobile-radiostation-background.jpg");
+    background-image: url("../images/mobile-radiostation-background.jpg");
     padding-top: 125px;
     padding-bottom: 125px;
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url("../../images/desktop-radiostation-background.jpg");
+    background-image: url("../images/desktop-radiostation-background.jpg");
     padding-bottom: 190px;
     padding-top: 33px;
   }

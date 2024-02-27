@@ -50,7 +50,6 @@ header {
     margin: 3px 0 3px 18px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .logo {
     margin-top: 23px;
@@ -65,7 +64,6 @@ header {
     height: 45px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .logo__icon {
     width: 105px;
@@ -90,23 +88,21 @@ header {
   color: #ffffff;
   background-color: #000;
 }
-
 .search-input::-webkit-input-placeholder {
   color: #ffffff;
 }
-
+.search-input::-moz-placeholder {
+  color: #ffffff;
+}
 .search-input:-ms-input-placeholder {
   color: #ffffff;
 }
-
 .search-input::-ms-input-placeholder {
   color: #ffffff;
 }
-
 .search-input::placeholder {
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .search-input {
     width: 148px;
@@ -116,7 +112,6 @@ header {
     line-height: 15px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .search-input {
     width: 450px;
@@ -138,7 +133,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 @media screen and (max-width: 1199px) {
   .main-site-nav__list {
     margin-top: 50px;
@@ -161,7 +155,6 @@ header {
     margin-bottom: 30px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .main-site-nav__item:last-child {
     margin-right: 25px;
@@ -174,7 +167,6 @@ header {
   font-style: normal;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .main-site-nav__link {
     display: -webkit-box;
@@ -193,7 +185,6 @@ header {
     width: 195px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .main-site-nav__link {
     padding: 52px 20px;
@@ -247,7 +238,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media screen and (min-width: 1200px) {
   .sidebar-site-nav__list {
     margin-top: 50px;
@@ -263,12 +253,10 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .sidebar-site-nav__item:hover, .sidebar-site-nav__item:focus {
   color: #000000;
   background-color: #ffffff;
 }
-
 @media screen and (min-width: 1200px) {
   .sidebar-site-nav__item {
     margin-bottom: 65px;
@@ -297,11 +285,9 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .sidebar-site-nav__link:hover, .sidebar-site-nav__link:focus {
   color: #000000;
 }
-
 @media screen and (min-width: 1200px) {
   .sidebar-site-nav__link {
     width: 190px;
@@ -331,7 +317,6 @@ header {
 .social__item {
   margin-right: 20px;
 }
-
 .social__item:last-child {
   margin-right: 0;
 }
@@ -355,19 +340,15 @@ header {
   padding: 0;
   margin-right: 18px;
 }
-
 .menu__btn .icon-cross {
   display: none;
 }
-
 .menu__btn.is-open .icon-cross {
   display: block;
 }
-
 .menu__btn.is-open .icon-burger {
   display: none;
 }
-
 @media screen and (min-width: 1200px) {
   .menu__btn {
     display: none;
@@ -394,7 +375,6 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 @media screen and (max-width: 1199px) {
   .menu-container {
     display: none;
@@ -416,7 +396,6 @@ header {
             flex-direction: column;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .menu-container {
     display: -webkit-box;
@@ -430,21 +409,18 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 @media screen and (max-width: 1199px) {
   .hero {
-    background-image: url("../../images/mobile-background.png");
+    background-image: url("../images/mobile-background.png");
     padding-bottom: 125px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("../../images/desktop-background.jpg");
+    background-image: url("../images/desktop-background.jpg");
     padding-bottom: 38.5px;
   }
 }
-
 @media screen and (min-width: 1700px) {
   .hero {
     padding-bottom: 200px;
@@ -475,7 +451,6 @@ header {
   font-weight: 700;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .hero__title {
     padding-top: 42px;
@@ -485,7 +460,6 @@ header {
     line-height: 77px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 100px;
@@ -501,7 +475,6 @@ header {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.79);
 }
-
 @media screen and (max-width: 1199px) {
   .hero__text {
     text-align: center;
@@ -510,7 +483,6 @@ header {
     line-height: 29px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero__text {
     font-size: 35px;
@@ -525,7 +497,6 @@ header {
   background-color: rgba(6, 6, 6, 0.5);
   border-radius: 50px;
 }
-
 @media screen and (max-width: 1199px) {
   .hero__content-block {
     margin-left: auto;
@@ -534,7 +505,6 @@ header {
     height: 293px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero__content-block {
     width: 450px;
@@ -552,7 +522,6 @@ header {
   list-style: none;
   margin: 0;
 }
-
 @media screen and (max-width: 1199px) {
   .hero__content-list {
     padding-top: 12px;
@@ -561,7 +530,6 @@ header {
     padding-right: 15px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero__content-list {
     padding-left: 30px;
@@ -581,23 +549,21 @@ header {
           justify-content: center;
   border-radius: 50px;
 }
-
 @media screen and (max-width: 1199px) {
   .hero__content-item {
     width: 110px;
     height: 110px;
   }
-  .hero__content-item:nth-child(2n + 1) {
+  .hero__content-item:nth-child(2n+1) {
     margin-right: 48px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero__content-item {
     width: 170px;
     height: 170px;
   }
-  .hero__content-item:nth-child(2n + 1) {
+  .hero__content-item:nth-child(2n+1) {
     margin-right: 48px;
   }
 }
@@ -630,7 +596,6 @@ header {
     display: none;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .player__wrapper {
     padding-top: 110px;
@@ -644,7 +609,6 @@ header {
     display: none;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .player {
     display: -webkit-box;
@@ -709,7 +673,6 @@ header {
     display: none;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .sidebar {
     top: 0;
@@ -730,7 +693,6 @@ footer {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 @media screen and (min-width: 1200px) {
   footer {
     display: none;
@@ -776,23 +738,20 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
 @media screen and (max-width: 1199px) {
   .radiostation__section {
-    background-image: url("../../images/mobile-radiostation-background.jpg");
+    background-image: url("../images/mobile-radiostation-background.jpg");
     padding-top: 125px;
     padding-bottom: 125px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__section {
-    background-image: url("../../images/desktop-radiostation-background.jpg");
+    background-image: url("../images/desktop-radiostation-background.jpg");
     padding-bottom: 190px;
     padding-top: 33px;
   }
 }
-
 @media screen and (min-width: 1700px) {
   .radiostation__section {
     padding-bottom: 200px;
@@ -813,7 +772,6 @@ footer {
     padding-left: 200px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .radiostation__wrapper {
     padding-left: 250px;
@@ -824,7 +782,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.55);
   border-radius: 50px;
 }
-
 @media screen and (max-width: 1199px) {
   .radiostation__content-block {
     display: block;
@@ -836,7 +793,6 @@ footer {
     padding: 21px 30px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__content-block {
     width: 800px;
@@ -844,13 +800,11 @@ footer {
     padding: 60px 85px;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .radiostation__content-block {
     width: 1000px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .radiostation__content-block {
     width: 1300px;
@@ -866,7 +820,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media screen and (max-width: 1199px) {
   .radiostation__list {
     -webkit-box-align: center;
@@ -880,11 +833,9 @@ footer {
     margin-bottom: 26px;
   }
 }
-
 .radiostation__item:last-child {
   margin-bottom: 0;
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__item {
     display: -webkit-box;
@@ -910,7 +861,6 @@ footer {
     height: 53px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__img {
     width: 206px;
@@ -930,7 +880,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media screen and (max-width: 1199px) {
   .radiostation__description-wrapper {
     width: 258px;
@@ -939,7 +888,6 @@ footer {
     padding-right: 8px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__description-wrapper {
     width: 1080px;
@@ -971,7 +919,6 @@ footer {
   font-weight: 700;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .radiostation__description {
     width: 200px;
@@ -979,7 +926,6 @@ footer {
     line-height: 8px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__description {
     width: 200px;
@@ -987,14 +933,12 @@ footer {
     line-height: 24px;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .radiostation__description {
     width: 440px;
     font-size: 16px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .radiostation__description {
     width: 100%;
@@ -1015,14 +959,12 @@ footer {
   padding: 0;
   border: none;
 }
-
 @media screen and (max-width: 1199px) {
   .radiostation__play-btn {
     width: 18px;
     height: 18px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__play-btn {
     width: 67px;
@@ -1052,7 +994,6 @@ footer {
     height: 14px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radiostation__play-icon {
     width: 48px;
@@ -1064,23 +1005,20 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
 @media screen and (max-width: 1199px) {
   .concerts__section {
-    background-image: url("../../images/mobile-concert-background.jpg");
+    background-image: url("../images/mobile-concert-background.jpg");
     padding-top: 52px;
     padding-bottom: 100px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__section {
-    background-image: url("../../images/desktop-concert-background.jpg");
+    background-image: url("../images/desktop-concert-background.jpg");
     padding-top: 37px;
     padding-bottom: 190px;
   }
 }
-
 @media screen and (min-width: 1700px) {
   .concerts__section {
     padding-bottom: 200px;
@@ -1094,7 +1032,6 @@ footer {
   color: #ffffff;
   text-align: center;
 }
-
 @media screen and (max-width: 1199px) {
   .concerts__title {
     font-size: 24px;
@@ -1102,7 +1039,6 @@ footer {
     margin-bottom: 15px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__title {
     font-size: 64px;
@@ -1117,7 +1053,6 @@ footer {
     padding-left: 200px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .concerts__wrapper {
     padding-left: 250px;
@@ -1131,7 +1066,6 @@ footer {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 50px;
 }
-
 @media screen and (max-width: 1199px) {
   .concerts__block {
     min-width: 300px;
@@ -1139,7 +1073,6 @@ footer {
     height: 547px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__block {
     width: 800px;
@@ -1147,13 +1080,11 @@ footer {
     padding: 30px 60px 15px 60px;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .concerts__block {
     width: 1000px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .concerts__block {
     width: 1300px;
@@ -1168,7 +1099,6 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 @media screen and (max-width: 1199px) {
   .concerts__list {
     -ms-flex-wrap: wrap;
@@ -1176,14 +1106,12 @@ footer {
     padding: 35px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__list {
     margin-top: 50px;
     margin-bottom: 50px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .concerts__list {
     margin-top: 0;
@@ -1200,11 +1128,10 @@ footer {
   .concerts__item:nth-child(4) {
     margin-bottom: 0;
   }
-  .concerts__item:nth-child(2n + 1) {
+  .concerts__item:nth-child(2n+1) {
     margin-right: 33px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__item {
     margin-right: 15px;
@@ -1220,14 +1147,12 @@ footer {
     height: 165px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__img {
     width: 200px;
     height: 280px;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .concerts__img {
     width: 225px;
@@ -1250,12 +1175,10 @@ footer {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .concerts__btn:hover, .concerts__btn:focus {
   color: #000000;
   background-color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .concerts__btn {
     width: 126px;
@@ -1264,7 +1187,6 @@ footer {
     line-height: 18px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .concerts__btn {
     width: 223px;
@@ -1309,7 +1231,6 @@ footer {
     padding-bottom: 50px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .modal {
     padding-bottom: 50px;
@@ -1326,13 +1247,11 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 @media screen and (max-width: 1199px) {
   .modal__list {
     padding: 35px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .modal__list {
     padding: 60px;
@@ -1349,7 +1268,6 @@ footer {
     height: 165px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .modal__img {
     width: 225px;
@@ -1361,23 +1279,20 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__section {
-    background-image: url("../../images/mobile-background.png");
+    background-image: url("../images/mobile-background.png");
     padding-top: 35px;
     padding-bottom: 85px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__section {
-    background-image: url("../../images/desktop-background.jpg");
+    background-image: url("../images/desktop-background.jpg");
     padding-top: 105px;
     padding-bottom: 250px;
   }
 }
-
 @media screen and (min-width: 1700px) {
   .contacts__section {
     padding-bottom: 200px;
@@ -1389,7 +1304,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__section-wrapper {
     -webkit-box-orient: vertical;
@@ -1398,7 +1312,6 @@ footer {
             flex-direction: column;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__section-wrapper {
     -webkit-box-pack: justify;
@@ -1417,7 +1330,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__title-wrapper {
     -webkit-box-align: center;
@@ -1433,7 +1345,6 @@ footer {
   font-weight: 700;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__title {
     text-align: center;
@@ -1442,7 +1353,6 @@ footer {
     margin-bottom: 10px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__title {
     max-width: 470px;
@@ -1460,14 +1370,12 @@ footer {
   font-weight: 300;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__link {
     font-size: 20px;
     line-height: 24px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__link {
     font-size: 32px;
@@ -1491,7 +1399,6 @@ footer {
   font-weight: 300;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__form-title {
     font-size: 24px;
@@ -1499,7 +1406,6 @@ footer {
     margin-bottom: 25px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__form-title {
     font-size: 32px;
@@ -1512,7 +1418,6 @@ footer {
   display: block;
   position: relative;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__form {
     padding-left: 25px;
@@ -1528,7 +1433,6 @@ footer {
     margin-bottom: 0;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__form-field {
     margin-bottom: 22px;
@@ -1549,14 +1453,12 @@ footer {
   border: 1px solid #ffffff;
   background-color: #000;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__form-input {
     font-size: 15px;
     line-height: 18px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__form-input {
     font-size: 20px;
@@ -1576,14 +1478,12 @@ footer {
   border: 1px solid #ffffff;
   background-color: #000;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__form-textarea {
     font-size: 15px;
     line-height: 18px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__form-textarea {
     font-size: 20px;
@@ -1605,7 +1505,6 @@ footer {
   border: 1px solid #ffffff;
   cursor: pointer;
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__form-btn {
     top: 93%;
@@ -1615,7 +1514,6 @@ footer {
     line-height: 18px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contacts__form-btn {
     top: 92%;
@@ -1624,5 +1522,4 @@ footer {
     font-size: 20px;
     line-height: 24px;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
